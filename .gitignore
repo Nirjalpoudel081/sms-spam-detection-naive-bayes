@@ -1,0 +1,23 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Ignore generated model artifacts by default
+models/*
+
+# Keep the trained model and vectorizer required by predict.py
+!models/multinomial_nb_model.joblib
+!models/tfidf_vectorizer.joblib
+
+# Ignore datasets and processed data
+data/
+
+# OS and editor files
+.DS_Store
+.vscode/
